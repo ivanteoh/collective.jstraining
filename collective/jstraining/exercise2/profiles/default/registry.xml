@@ -1,4 +1,23 @@
 <?xml version="1.0"?>
 <registry>
+  <records prefix="plone.resources/exercise2-inline"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+  <value key="js">++plone++exercise2/ng2app/dist/inline.js</value>
+</records>
+<records prefix="plone.resources/exercise2-main"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+  <value key="js">++plone++exercise2/ng2app/dist/main.8b778eea5dd35968ef66.bundle.js</value>
+  <value key="deps">exercise2-inline</value>
+  <value key="deps">exercise2-style</value>
+</records>
+<records prefix="plone.resources/exercise2-style"
+          interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+  <value key="js">++plone++exercise2/ng2app/dist/styles.b52d2076048963e7cbfd.bundle.js</value>
+</records>
+
+    <records prefix=”plone.resources/exercise2”
+            interface=’Products.CMFPlone.interfaces.IResourceRegistry’>
+      <value key=”js”>++plone++exercise2/ng2app/main.js</value>
+    </records>
 
 </registry>
