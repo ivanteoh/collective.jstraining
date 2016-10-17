@@ -21,3 +21,13 @@ module.exports = {
   },
   watch: true
 };
+module.exports = {
+  entry: {
+    app: './main.css'
+  },
+  output: {
+    filename: 'exercise3-compiled.css'
+  },
+  watch: true
+};
+
