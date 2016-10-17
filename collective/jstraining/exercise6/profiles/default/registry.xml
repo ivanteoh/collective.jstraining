@@ -1,4 +1,33 @@
 <?xml version="1.0"?>
 <registry>
+  <records prefix="plone.resources/exercise6"
+      interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++exercise6/pattern.js</value>
+  </records>
+  <records prefix="plone.resources/bundle-exercise6"
+      interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++exercise6/bundle.js</value>
+    <value key="css">
+      <element>++plone++exercise6/pattern.less</element>
+    </value>
+  </records>
+  <records prefix="plone.bundles/exercise6"
+      interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <!-- reference to bundle resource definition -->
+      <element>bundle-exercise6</element>
+    </value>
+    <value key="merge_with">default</value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++exercise6/exercise6-compiled.min.js</value>
+    <value key="csscompilation">++plone++exercise6/exercise6-compiled.css</value>
+    <value key="last_compilation">2016-10-04 00:00:00</value>
+
+    <!-- so we don't include these modules multiple times -->
+    <value key="stub_js_modules">
+      <element>jquery</element>
+      <element>mockup-patterns-base</element>
+    </value>
+  </records>
 
 </registry>

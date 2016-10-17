@@ -1,7 +1,7 @@
 /**
  * Created by ivan on 17/10/16.
  */
-define('exercise6',[
+define([
   'jquery',
   'mockup-patterns-base',
 ], function($, Base) {
@@ -21,14 +21,3 @@ define('exercise6',[
 
   return Pattern;
 });
-/**
- * Created by ivan on 17/10/16.
- */
-require([
-  'exercise6'
-], function() {
-  'use strict';
-});
-
-define("/Users/ivan/code/training/buildout/src/collective.jstraining/collective/jstraining/exercise6/static/bundle.js", function(){});
-
