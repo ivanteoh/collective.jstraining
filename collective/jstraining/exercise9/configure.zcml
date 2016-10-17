@@ -14,4 +14,10 @@
      provides="Products.GenericSetup.interfaces.EXTENSION"
      />
 
+   <plone:static
+     directory="static"
+     type="plone"
+     name="exercise9"
+     />
+
 </configure>
