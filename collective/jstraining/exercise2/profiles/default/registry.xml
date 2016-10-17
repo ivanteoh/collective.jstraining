@@ -15,9 +15,9 @@
   <value key="js">++plone++exercise2/ng2app/dist/styles.b52d2076048963e7cbfd.bundle.js</value>
 </records>
 
-    <records prefix=”plone.resources/exercise2”
-            interface=’Products.CMFPlone.interfaces.IResourceRegistry’>
-      <value key=”js”>++plone++exercise2/ng2app/main.js</value>
+    <records prefix="plone.resources/exercise2"
+            interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+      <value key="js">++plone++exercise2/ng2app/main.js</value>
     </records>
 
 </registry>
