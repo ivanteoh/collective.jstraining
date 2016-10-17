@@ -1,17 +1,31 @@
 <configure
-   xmlns="http://namespaces.zope.org/zope"
-   xmlns:plone="http://namespaces.plone.org/plone"
-   xmlns:browser="http://namespaces.zope.org/browser"
-   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
-   xmlns:z3c="http://namespaces.zope.org/z3c"
-   i18n_domain="collective.jstraining">
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="collective.jstraining">
 
-   <genericsetup:registerProfile
-     name="default"
-     title="Exercise 7"
-     directory="profiles/default"
-     description="Install Exercise 7 training package"
-     provides="Products.GenericSetup.interfaces.EXTENSION"
-     />
+  <genericsetup:registerProfile
+      name="default"
+      title="Exercise 7"
+      directory="profiles/default"
+      description="Install Exercise 7 training package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
+
+  <plone:static
+      directory="static"
+      type="plone"
+      name="exercise7"
+  />
+
+  <adapter factory=".widget.LeadImageMinSizeImageFieldWidget"/>
+  <z3c:widgetTemplate
+      mode="input"
+      widget=".interfaces.IMinSizeImageWidget"
+      layer=".interfaces.IExercise7Layer"
+      template="image_widget.pt"
+  />
 
 </configure>
