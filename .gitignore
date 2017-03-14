@@ -20,6 +20,8 @@ develop-eggs
 .installed.cfg
 .codeintel
 .idea
+.vscode
+tags
 
 # Unit test / coverage reports
 .coverage
