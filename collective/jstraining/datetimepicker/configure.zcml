@@ -1,0 +1,30 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:plone="http://namespaces.plone.org/plone"
+   xmlns:browser="http://namespaces.zope.org/browser"
+   xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+   i18n_domain="collective.jstraining">
+
+   <genericsetup:registerProfile
+     name="default"
+     title="Date Time Picker"
+     directory="profiles/default"
+     description="Install Date Time Picker training package"
+     provides="Products.GenericSetup.interfaces.EXTENSION"
+     />
+
+   <plone:static
+     directory="static"
+     type="plone"
+     name="datetimepicker"
+     />
+
+   <browser:page
+     name="datetimepickerpage"
+     for="*"
+     class=".browser.DateTimePickerView"
+     template="page.pt"
+     permission="zope2.View"
+     />
+
+</configure>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<registry>
+  <records prefix="plone.resources/bootstrap-datetimepicker"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++datetimepicker/js/bootstrap-datetimepicker.js</value>
+    <value key="deps">jquery,moment,bootstrap-transition,bootstrap-collapse</value>
+  </records>
+  <records prefix="plone.resources/pattern-bootstrap-datetimepicker"
+           interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++datetimepicker/js/pattern-bootstrap-datetimepicker.js</value>
+    <value key="css">
+      <element>++plone++datetimepicker/less/pattern-bootstrap-datetimepicker.less</element>
+    </value>
+  </records>
+  <records prefix="plone.bundles/pattern-bootstrap-datetimepicker"
+      interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>pattern-bootstrap-datetimepicker</element>
+    </value>
+    <value key="merge_with">default</value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++datetimepicker/pattern-bootstrap-datetimepicker-compiled.min.js</value>
+    <value key="csscompilation">++plone++datetimepicker/pattern-bootstrap-datetimepicker-compiled.css</value>
+    <value key="last_compilation">2016-10-04 00:00:00</value>
+    <value key="stub_js_modules">
+      <element>jquery</element>
+      <element>pat-base</element>
+      <element>mockup-utils</element>
+      <element>translate</element>
+      <element>bootstrap-datetimepicker</element>
+    </value>
+  </records>
+</registry>

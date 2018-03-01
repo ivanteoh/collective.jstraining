@@ -20,7 +20,8 @@
       name="exercise7"
   />
 
-  <adapter factory=".widget.LeadImageMinSizeImageFieldWidget"/>
+  <adapter factory=".widget.LeadImageMinSizeImageFieldWidget" />
+  
   <z3c:widgetTemplate
       mode="input"
       widget=".interfaces.IMinSizeImageWidget"

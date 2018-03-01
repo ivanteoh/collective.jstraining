@@ -8,9 +8,10 @@
   <include package=".exercise4" />
   <include package=".exercise5" />
   <include package=".exercise6" />
-  <include package=".exercise7" />
+  <!-- include package=".exercise7" / -->
   <include package=".exercise8" />
   <include package=".exercise9" />
   <include package=".exercise10" />
+  <include package=".datetimepicker" />
 
 </configure>

@@ -14,3 +14,6 @@ Reading:
 * https://training.plone.org/5/javascript/requirejs-modules.html
 * http://docs.plone.org/adapt-and-extend/theming/resourceregistry.html#id15
 
+Compile
+=======
+* ./bin/plone-compile-resources --site-id=Plone --bundle=pattern-bootstrap-datetimepicker
